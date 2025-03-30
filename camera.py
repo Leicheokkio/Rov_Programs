@@ -14,8 +14,8 @@ class CameraManager:
         self.caps = []
 
         # 尝试初始化3个摄像头
-        for i in range(3):
-            max_retries = 3
+        for i in range(4):
+            max_retries = 4
             for attempt in range(max_retries):
                 cap = cv2.VideoCapture(i, cv2.CAP_DSHOW)
                 if cap.isOpened():
